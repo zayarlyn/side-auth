@@ -1,0 +1,41 @@
+{
+	"name": "side-auth",
+	"version": "1.0.0",
+	"description": "Self-managed auth microservice for your side projects with centralized authentication capability",
+	"main": "src/genesis.ts",
+	"scripts": {
+		"test": "npm run test",
+		"build": "tsc -p tsconfig.json",
+		"dev-once": "ts-node src/genesis.ts",
+		"dev": "nodemon src/genesis.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:zayarlyn/side-auth.git"
+	},
+	"keywords": [
+		"typescript",
+		"authentication",
+		"microservice",
+		"fastify"
+	],
+	"author": "Zayar Lin",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/zayarlyn/side-auth/issues"
+	},
+	"homepage": "https://github.com/zayarlyn/side-auth#readme",
+	"dependencies": {
+		"fastify": "^4.28.0",
+		"jsonwebtoken": "^9.0.2",
+		"mongoose": "^8.4.4"
+	},
+	"devDependencies": {
+		"@types/jsonwebtoken": "^9.0.6",
+		"@types/node": "^20.14.9",
+		"nodemon": "^3.1.4",
+		"ts-node": "^10.9.2",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "^5.5.2"
+	}
+}
